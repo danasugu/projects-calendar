@@ -6,5 +6,7 @@ return [
     'primary_language'    => 'en',
     'available_languages' => [
         'en' => 'English',
+        'ro' => 'Romanian',
     ],
+    'registration_default_role' => '2',
 ];
