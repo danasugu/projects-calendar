@@ -160,6 +160,46 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 38,
+                'title' => 'project_manager_create',
+            ],
+            [
+                'id'    => 39,
+                'title' => 'project_manager_edit',
+            ],
+            [
+                'id'    => 40,
+                'title' => 'project_manager_show',
+            ],
+            [
+                'id'    => 41,
+                'title' => 'project_manager_delete',
+            ],
+            [
+                'id'    => 42,
+                'title' => 'project_manager_access',
+            ],
+            [
+                'id'    => 43,
+                'title' => 'project_create',
+            ],
+            [
+                'id'    => 44,
+                'title' => 'project_edit',
+            ],
+            [
+                'id'    => 45,
+                'title' => 'project_show',
+            ],
+            [
+                'id'    => 46,
+                'title' => 'project_delete',
+            ],
+            [
+                'id'    => 47,
+                'title' => 'project_access',
+            ],
+            [
+                'id'    => 48,
                 'title' => 'profile_password_edit',
             ],
         ];
