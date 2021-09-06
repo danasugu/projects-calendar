@@ -43,6 +43,10 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::post('crm-documents/ckmedia', 'CrmDocumentController@storeCKEditorImages')->name('crm-documents.storeCKEditorImages');
     Route::resource('crm-documents', 'CrmDocumentController');
 
+    // Project Manager
+    Route::delete('project-managers/destroy', 'ProjectManagerController@massDestroy')->name('project-managers.massDestroy');
+    Route::resource('project-managers', 'ProjectManagerController');
+
     Route::get('system-calendar', 'SystemCalendarController@index')->name('systemCalendar');
 });
 Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 'middleware' => ['auth']], function () {
