@@ -109,6 +109,26 @@
                 </ul>
             </li>
         @endcan
+        @can('project_manager_access')
+            <li class="c-sidebar-nav-item">
+                <a href="{{ route("admin.project-managers.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/project-managers") || request()->is("admin/project-managers/*") ? "c-active" : "" }}">
+                    <i class="fa-fw fas fa-cogs c-sidebar-nav-icon">
+
+                    </i>
+                    {{ trans('cruds.projectManager.title') }}
+                </a>
+            </li>
+        @endcan
+        @can('project_access')
+            <li class="c-sidebar-nav-item">
+                <a href="{{ route("admin.projects.index") }}" class="c-sidebar-nav-link {{ request()->is("admin/projects") || request()->is("admin/projects/*") ? "c-active" : "" }}">
+                    <i class="fa-fw fas fa-cogs c-sidebar-nav-icon">
+
+                    </i>
+                    {{ trans('cruds.project.title') }}
+                </a>
+            </li>
+        @endcan
         <li class="c-sidebar-nav-item">
             <a href="{{ route("admin.systemCalendar") }}" class="c-sidebar-nav-link {{ request()->is("admin/system-calendar") || request()->is("admin/system-calendar/*") ? "c-active" : "" }}">
                 <i class="c-sidebar-nav-icon fa-fw fas fa-calendar">
